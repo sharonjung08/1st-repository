@@ -1,7 +1,7 @@
 
 ### R Working Directory
 getwd()
-setwd("C:\\Users\\everu\\Downloads\\r studio works\\")
+setwd("C:\\Users\\socra\\Downloads\\")
 
 data<-read.csv("건강보험심사평가원_의료행위별 성별 연령군별 건강보험 진료 통계_20141231.csv", 
   header=TRUE, fileEncoding="euc-kr")
@@ -64,6 +64,7 @@ rename(data, year = 진료년도, sex = 성별)
 library(dplyr)
 new_data<-rename(data, year = 진료년도, sex = 성별)
 summary(new_data)
+
 
 install.packages('glmnet')
 library(glmnet)
@@ -218,7 +219,7 @@ h<-function(KOR, JAP) {
   }
 }
 
-a<-c(1:5) ##from 1~5 (1:10 = from 1~10)
+a<-c(1:5)
 b<-c(0, 2, 4, 2, 1)
 
 h(a, b)
