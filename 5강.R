@@ -1,5 +1,3 @@
-
-
 ####### HW 4 ######
 data<-read.csv(
   "C:\\Users\\socra\\Downloads\\건강보험심사평가원_의료행위별 성별 연령군별 건강보험 진료 통계_20141231.csv", 
@@ -48,8 +46,8 @@ for (i in X) {
 
 
 ############# 5강 Average Treatment Effects ############
-# data <- read.csv("https://docs.google.com/uc?id=1kSxrVci_EUcSr_Lg1JKk1l7Xd5I9zfRC&export=download")
-data <- read.csv("C:\\Users\\socra\\Downloads\\welfare-small.csv", header=TRUE)
+# data <- read.csv(""C:\Users\everu\Downloads\welfare-small.csv")
+data <- read.csv("C:\\Users\\everu\\Downloads\\welfare-small.csv", header=TRUE)
 
 summary(data)
 
@@ -81,9 +79,6 @@ summary(nottreated)
 hist(treated$age)
 hist(nottreated$age)
 
-
-
-
 t.test(age~w, data)
 t.test(income~w, data)
 t.test(educ~w, data)
@@ -94,10 +89,33 @@ t.test(educ~w, data)
 
 
 ######### HW 5 ############
-data <- read.csv("C:\\Users\\socra\\Downloads\\respiratory.csv", header=TRUE)
+data <- read.csv("C:\\Users\\everu\\Downloads\\respiratory.csv", header=TRUE)
 
 summary(data)
 
+# Treatment w:  "Treated" (1) or "Not treated" (0)
+treatment <- "treat"
+
+# Outcome: y
+outcome <- "outcome"
 
 
+# Additional covariates
+covariates <- c("age", "sex")
 
+
+# T-test
+t.test(outcome ~ treat, data=data)
+
+treated<-filter(data,treat=="P")
+nottreated<-filter(data, treat=="A")
+
+summary(treated)
+summary(nottreated)
+
+hist(treated$age)
+hist(nottreated$age) ##difference no because p value > 0.05 and 0 between confidence interval
+
+t.test(age~treat, data)
+t.test(income~w, data)
+t.test(educ~w, data)
