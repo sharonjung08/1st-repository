@@ -1,5 +1,6 @@
-#createreadmefile
+# createreadmefile
 
+```
 ####### Ch.7 Multiple Linear Regression #########
 data('esoph')
 
@@ -64,4 +65,4 @@ summary(wow)
 
 ## Compare two models: Which model is better, controlling for age & sex VS controlling for  center & visit?
 ## "wow" is a better figure, because the adjusted r-squared value is closer to 1 than "yey"
-
+```
