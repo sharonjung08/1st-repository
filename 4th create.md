@@ -1,6 +1,8 @@
+# createreadmefile
 
 ###### Ch. 4 ######
 
+```
 getwd()
 setwd("C:\\Users\\everu\\Downloads\\r studio works\\")
 
@@ -143,3 +145,4 @@ correlation ## if confidence interval (minimum & maximum) doesn't include p val<
 correlation$p.value ## p-value<0.05, therefore significant
 correlation$estimate ## how much they are linked with each other (correlation) == correlation coefficient/상관계수
 correlation$conf.int ##
+```
