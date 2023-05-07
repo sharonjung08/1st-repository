@@ -1,4 +1,6 @@
+# createreadmefile
 
+```
 ###### Ch. 6 ######
 data('esoph') #Smoking, Alcohol and (O)esophageal Cancer
 
@@ -38,5 +40,5 @@ summary(lel) #2 values of estimate (if negative)
 #r-squared=closer to 1 is better
 
 ##if there is 0 between x~y <- confidence interval 
-
+```
 
