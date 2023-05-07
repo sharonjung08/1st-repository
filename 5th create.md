@@ -1,3 +1,6 @@
+# createreadmefile
+
+```
 ####### HW 4 ######
 data<-read.csv(
   "C:\\Users\\socra\\Downloads\\건강보험심사평가원_의료행위별 성별 연령군별 건강보험 진료 통계_20141231.csv", 
@@ -119,3 +122,4 @@ hist(nottreated$age) ##difference no because p value > 0.05 and 0 between confid
 t.test(age~treat, data)
 t.test(income~w, data)
 t.test(educ~w, data)
+```
