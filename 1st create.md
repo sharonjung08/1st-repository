@@ -4,9 +4,9 @@
 2) (above) ## and space ______ is subtitle
 
 1강 정리
-
-1) data(esoph) <- esoph is a database that's already in R studio so no need for additional download but just view.
-2) summary(esoph$ncases) <- viewing summary
+```
+data(esoph) <- esoph is a database that's already in R studio so no need for additional download but just view.
+summary(esoph$ncases) <- viewing summary
 
 hist(esoph$ncases) <-viewing the histogram
 
@@ -35,3 +35,4 @@ quantile(xyz)
 abcde<-scale(data$환자수)
 summary(abcde)
 hist(abcde)
+```
