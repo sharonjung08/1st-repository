@@ -1,22 +1,4 @@
-
-####### Ch.7 Multiple Linear Regression #########
-data('esoph')
-
-summary(esoph)
-
-res<-lm(ncases~ncontrols, data = esoph)
-summary(res)
-
-
-res<-lm(ncases~ncontrols+agegp+alcgp, data = esoph)
-summary(res)
-
-## Factor Variables
-esoph$agegp<-as.factor(esoph$agegp)
-esoph$alcgp<-as.factor(esoph$alcgp)
-
-
-
+# createreadmefile 
 ############# HW ################
 data <- read.csv("C:\\Users\\everu\\Downloads\\welfare-small.csv", header=TRUE)
 
