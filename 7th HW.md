@@ -1,5 +1,5 @@
 # createreadmefile 
-############# HW ################
+############# HW ################    
 data <- read.csv("C:\\Users\\everu\\Downloads\\welfare-small.csv", header=TRUE)
 
 summary(data)
