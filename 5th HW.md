@@ -1,4 +1,4 @@
-
+# createreadmefile 
 
 ####### HW 4 ######
 data<-read.csv(
@@ -43,48 +43,6 @@ for (i in X) {
   print(correlation$estimate)
   print(correlation$p.value)
 }
-
-
-
-
-############# 5강 Average Treatment Effects ############
-# data <- read.csv(""C:\Users\everu\Downloads\welfare-small.csv")
-data <- read.csv("C:\\Users\\everu\\Downloads\\welfare-small.csv", header=TRUE)
-
-summary(data)
-
-# Treatment w:  "Treated" (1) or "Not treated" (0)
-treatment <- "w"
-
-# Outcome: y
-outcome <- "y"
-
-
-# Additional covariates
-covariates <- c("age", "polviews", "income", "educ", "marital", "sex")
-
-
-# T-test
-t.test(y ~ w, data=data)
-
-
-
-# Compare Treated vs Not treated groups
-library(dplyr)
-
-treated<-filter(data, w==1)
-nottreated<-filter(data, w==0)
-
-summary(treated)
-summary(nottreated)
-
-hist(treated$age)
-hist(nottreated$age)
-
-t.test(age~w, data)
-t.test(income~w, data)
-t.test(educ~w, data)
-
 
 
 
