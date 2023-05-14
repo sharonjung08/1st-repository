@@ -42,7 +42,6 @@ summary(yey)
 wow<-lm(outcome~treat+center+visit, data=data)
 summary(wow)
 
-
 ## Compare two models: Which model is better, controlling for age & sex VS controlling for  center & visit?
 ## "wow" is a better figure, because the adjusted r-squared value is closer to 1 than "yey"
 
